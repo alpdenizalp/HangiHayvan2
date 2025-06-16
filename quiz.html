@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste Başla - Sen Hangi Hayvansın?</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Sen Hangi Hayvansın?</h1>
+    <p>Kendinle ilgili birkaç soruyu cevapla, seni tanıyalım!</p>
+  </header>
+
+  <form id="quizForm" class="quiz-form">
+    <div class="form-group">
+      <label for="name">Adınız:</label>
+      <input type="text" id="name" name="name" required>
+      <small class="error" id="nameError"></small>
+    </div>
+
+    <div class="form-group">
+      <label for="age">Yaşınız:</label>
+      <input type="number" id="age" name="age" required>
+      <small class="error" id="ageError"></small>
+    </div>
+
+    <div class="form-group">
+      <label>Cinsiyetiniz:</label>
+      <label><input type="radio" name="gender" value="Kadın" required> Kadın</label>
+      <label><input type="radio" name="gender" value="Erkek"> Erkek</label>
+      <label><input type="radio" name="gender" value="Diğer"> Diğer</label>
+      <small class="error" id="genderError"></small>
+    </div>
+
+    <div class="form-group">
+      <label for="hobby">En çok keyif aldığınız aktivite:</label>
+      <select id="hobby" name="hobby" required>
+        <option value="">Seçiniz</option>
+        <option value="Doğa gezisi">Doğa gezisi</option>
+        <option value="Uyumak">Uyumak</option>
+        <option value="Koşmak">Koşmak</option>
+        <option value="Yemek">Yemek</option>
+        <option value="Sosyalleşmek">Sosyalleşmek</option>
+      </select>
+      <small class="error" id="hobbyError"></small>
+    </div>
+
+    <div class="center">
+      <button type="submit" class="btn">Sonucu Gör</button>
+    </div>
+  </form>
+
+  <footer>
+    <p>&copy; 2025 Sen Hangi Hayvansın?</p>
+  </footer>
+
+  <script src="js/quiz.js"></script>
+</body>
+</html>
